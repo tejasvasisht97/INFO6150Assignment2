@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1A374D;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    overflow: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+    position: relative;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 3%;
+}
+
+.certifications-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    /* display: flex; */
+    margin: 0 auto;
+}
+
+.certifications-table th, .certifications-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.certifications-table th {
+    background-color: white;
+}
+
+.certifications-table tr:nth-child(even) {
+    background-color: white;
+}
+
+
+.cert img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+}
+
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background:white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 2em;
+}
+
+form label,
+form textarea,
+form input[type="text"],
+form input[type="email"] {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px); /* Adjusts for padding and border */
+    box-sizing: border-box; /* Ensures the width includes padding and border */
+}
+
+form input[type="submit"] {
+    background: #1A374D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background: #555;
+}
+
+
+form p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+form p a {
+    text-decoration: none;
+    color: #1A374D;
+    font-weight: bold;
+}
+
+form p a:hover {
+    text-decoration: underline;
+}
+.profile-image {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    margin-bottom: 10px; /* Adds some space between image and name */
+    border: 2px solid #333; /* Optional border for the image */
+}
+
+@media screen and (max-width: 365px) {
+    header {
+        padding: 0.5em;
+    }
+    section {
+        padding: 1em;
+    }
+    footer {
+        padding: 0.5em;
+    }
+    .video-container{
+        width: 100px;
+    }
+}
+@media screen and (max-width: 768px) {
+    nav ul {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+    .certifications-table{
+        max-width: none;
+    }
+    .video-container{
+        width: 200px;
+    }
+}
+
+.certifications-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.cert {
+    position: relative;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.cert img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    border-radius: 8px;
+    float: left;
+}
+
+.cert figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.cert:hover figcaption {
+    opacity: 1;
+}
+#certifications1{
+    margin-bottom: 5em;
+}
